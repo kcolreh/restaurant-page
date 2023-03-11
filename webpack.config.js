@@ -1,5 +1,6 @@
 /* eslint-disable no-tabs */
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	watch: true,
@@ -7,7 +8,7 @@ module.exports = {
 		index: './src/index.js',
 	},
 	output: {
-		filename: 'main.js',
+		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	mode: 'development',
@@ -20,11 +21,7 @@ module.exports = {
 			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
 				type: 'asset/resource',
-			},
-			{
-				test: /\.css$/i,
-				use: ['style-loader', 'css-loader'],
-			},
+			}
 		],
 	},
 };
