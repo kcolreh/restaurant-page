@@ -21,7 +21,6 @@ export function createDiv(id) {
 
 export function createImage(id, link) {
     const image = document.createElement('img');
-    image.classList.add('card-image');
     image.id = id;
     image.src = link;
     return image;

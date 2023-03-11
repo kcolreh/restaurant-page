@@ -1,9 +1,23 @@
+:root {
+  --clr-neutral-black: hsl(0, 75%, 2%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-primary: hsl(24, 57%, 57%);
+  --clr-secondary: rgba(255, 127, 80, 0.218);
+  --clr-neutral: hsla(3, 48%, 45%, 0.645);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  margin: 0;
+}
+
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 255, 255, 0.136);
 }
 
 .header {
@@ -11,46 +25,109 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 2rem;
-  background-color: rgba(0, 0, 255, 0.268);
+  height: 15vh;
+  gap: 5rem;
+  background-color: var(--clr-primary);
   color: white;
 }
 
-.title {
+.header-button {
+  font-size: 1rem;
+  width: 2rem;
+  height: 2rem;
+  color: var(--clr-neutral-white);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  font-weight: bold;
+}
+
+.header-title {
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
+}
+
+.image-title {
+  height: 200px;
+  width: 200px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
   overflow: auto;
-  justify-content: center;
-  grid-gap: 50px;
-  width: 80vw;
-  background-color: rgba(128, 255, 0, 0.302);
+  grid-gap: 20px;
+  width: 60vw;
 }
 
 .menu-items {
-  background-color: red;
-  height: 450px;
+  justify-self: center;
+  border-radius: 1rem;
+  height: 430px;
   width: 335px;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 335px;
+  width: 335px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 400;
+  color: var(--clr-primary);
+  margin: 2px;
+}
+
+.card-paragraph {
+  text-align: center;
+  color: var(--clr-neutral);
+  margin: 0;
 }
 
 .social-media-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.188);
+  background-color: var(--clr-secondary);
+  gap: 1rem;
   height: 100px;
   width: 100vw;
+  margin-top: 1rem;
+}
+
+.social-media-button {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 10px;
+  width: 8rem;
+  border: var(--clr-primary) solid 1px;
+  color: var(--clr-primary);
 }
 
 .footer-menu-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 127, 80, 0.218);
+  background-color: var(--clr-primary);
+  gap: 1rem;
   height: 150px;
   width: 100vw;
+}
+
+.footer-button {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 10px;
+  width: 8rem;
+  border: var(--clr-neutral-white) solid 1px;
+  color: var(--clr-neutral-white);
 }

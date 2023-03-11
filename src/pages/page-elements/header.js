@@ -7,10 +7,12 @@ export function createHeader() {
     const title = createTitle(2, 'header-title', 'Kiku el restorano');
     const buttonContent = ['Home', 'About', 'Menu', 'Content'];
 
+    title.classList.add('header-title');
     content.appendChild(header);
 
     buttonContent.forEach(index => {
         const button = createButton(`header-${index.toLowerCase()}`, index);
+        button.classList.add('header-button');
         header.appendChild(button);
         if (index === 'About') {
             header.appendChild(title)

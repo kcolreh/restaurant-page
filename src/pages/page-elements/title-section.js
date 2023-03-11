@@ -1,12 +1,12 @@
-import { createTitle } from "../../utilities/elements";
+import { createImage } from "../../utilities/elements";
 
 export function createSection1() {
     const content = document.getElementById('content');
     const section = document.createElement('section');
-    const title = createTitle(1, 'section-1-title', 'snacks');
-    title.classList.add('title');
+    const image = createImage('title-image', '../src/utilities/img/title-cat.png')
+    image.classList.add('image-title');
     section.classList.add('snacks');
 
     content.appendChild(section);
-    section.appendChild(title);
+    section.appendChild(image);
 }
