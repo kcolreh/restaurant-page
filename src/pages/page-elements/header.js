@@ -8,6 +8,7 @@ export function createHeader() {
     const buttonContent = ['Home', 'About', 'Menu', 'Content'];
 
     title.classList.add('header-title');
+    header.id = ('header');
     content.appendChild(header);
 
     buttonContent.forEach(index => {

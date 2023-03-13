@@ -1,40 +1,34 @@
-import { homePage } from './pages/home';
+import { homePage } from './pages/home.js';
+import { menuPage } from './pages/menu.js';
+import { renderPage } from './functions/render-page.js';
+import { firstLoad } from './functions/first-load.js';
 import './style.css';
 
-homePage();
+firstLoad();
 
-const changeHome = (() => {
-    const homeButton = document.getElementById('header-home');
+const homeBtn = document.getElementById('header-home');
+const aboutBtn = document.getElementById('header-about');
+const menuBtn = document.getElementById('header-menu');
+const contentBtn = document.getElementById('header-content');
 
-    homeButton.addEventListener('click', () => {
-        console.log('home');
-    })
-})();
+homeBtn.addEventListener('click', () => {
+    console.log('home');
+    renderPage();
+    homePage();
+});
 
-const changeAbout = (() => {
-    const homeButton = document.getElementById('header-about');
+aboutBtn.addEventListener('click', () => {
+    console.log('about');
+});
 
-    homeButton.addEventListener('click', () => {
-        console.log('about');
-    })
-})();
+menuBtn.addEventListener('click', () => {
+    console.log('menu');
+    renderPage();
+    menuPage();
+});
 
-
-const changeMenu = (() => {
-    const homeButton = document.getElementById('header-menu');
-
-    homeButton.addEventListener('click', () => {
-        console.log('menu');
-    })
-})();
-
-
-const changeContent = (() => {
-    const homeButton = document.getElementById('header-content');
-
-    homeButton.addEventListener('click', () => {
-        console.log('content');
-    })
-})();
+contentBtn.addEventListener('click', () => {
+    console.log('content');
+});
 
 

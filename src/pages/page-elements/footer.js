@@ -16,7 +16,7 @@ function socialMediaContainer(id) {
 
 function createFooterContainer(id) {
     const footerContainer = createDiv(id);
-    const buttonContent = ['Contact Us', 'Privacy Policy', 'Accesability', 'Legal Terms'];
+    const buttonContent = ['Contact Us', 'Privacy', 'Accesability', 'Legal Terms'];
 
     buttonContent.forEach(index => {
         const button = createButton(`header-${index.toLowerCase()}`, index);
