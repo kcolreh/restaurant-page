@@ -33,3 +33,16 @@ export function createParagraph(id, content) {
     paragraph.innerHTML = content;
     return paragraph;
 };
+
+export function createList(id, content) {
+    const ul = document.createElement('ul');
+    const listArray = content.split(',');
+    ul.id = id;
+
+    listArray.forEach(element => {
+        const li = document.createElement('li');
+        li.innerHTML = element;
+        ul.appendChild(li);
+    });
+    return ul;
+};
