@@ -1,5 +1,4 @@
-import { createButton } from "../../utilities/elements";
-import { createDiv } from "../../utilities/elements";
+import { createButton, createDiv } from "./elements";
 
 function socialMediaContainer(id) {
     const mediaContainer = createDiv(id);

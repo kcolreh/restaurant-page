@@ -1,5 +1,4 @@
-import { createDiv, createParagraph, createList, createImage } from "../../utilities/elements";
-import { createSection1 } from "./title-section";
+import { createDiv, createParagraph, createList, createImage } from "./elements";
 
 export function createContact() {
     const content = document.getElementById('content');

@@ -1,4 +1,4 @@
-import { createImage } from "../../utilities/elements";
+import { createImage } from "./elements";
 
 export function createSection1() {
     const content = document.getElementById('content');

@@ -1,7 +1,4 @@
-import { createTitle } from "../../utilities/elements";
-import { createDiv } from "../../utilities/elements";
-import { createImage } from "../../utilities/elements";
-import { createParagraph } from "../../utilities/elements";
+import { createDiv, createImage, createParagraph, createTitle } from "./elements";
 
 const cardFactory = (image, title, paragraph) => {
     let idCounter = 1;

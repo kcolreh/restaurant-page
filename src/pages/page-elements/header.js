@@ -1,5 +1,4 @@
-import { createButton } from "../../utilities/elements";
-import { createTitle } from "../../utilities/elements";
+import { createButton, createTitle } from "./elements";
 
 export function createHeader() {
     const content = document.getElementById('content');

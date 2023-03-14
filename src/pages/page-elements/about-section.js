@@ -1,4 +1,4 @@
-import { createDiv, createImage, createTitle, createParagraph } from "../../utilities/elements";
+import { createDiv, createImage, createTitle, createParagraph } from "./elements";
 
 export function createAboutSection() {
     const content = document.getElementById('content');

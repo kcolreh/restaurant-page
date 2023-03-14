@@ -1,4 +1,4 @@
-import { createDiv, createImage, createParagraph, createTitle } from "../../utilities/elements";
+import { createDiv, createImage, createParagraph, createTitle } from "./elements";
 
 export function createHome() {
     const content = document.getElementById('content');
