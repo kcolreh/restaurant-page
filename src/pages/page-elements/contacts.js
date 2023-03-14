@@ -1,7 +1,11 @@
-import { createDiv, createParagraph, createList } from "../../utilities/elements";
+import { createDiv, createParagraph, createList, createImage } from "../../utilities/elements";
+import { createSection1 } from "./title-section";
 
 export function createContact() {
     const content = document.getElementById('content');
+
+    const image = createImage('contact-image', '../src/utilities/img/title-cat.png')
+    image.classList.add('contact-image');
 
     const contactContainer = createDiv('contact-container');
     contactContainer.classList.add('contact-container');
@@ -11,6 +15,7 @@ export function createContact() {
 
     content.appendChild(contactContainer);
     contactContainer.appendChild(location1);
+    contactContainer.appendChild(image);
     contactContainer.appendChild(location2);
 
 }
@@ -20,7 +25,7 @@ function createLocation1() {
     const locationContainer = createDiv('location-container');
     locationContainer.classList.add('location-container');
 
-    const paragraph1 = createParagraph('contacts-paragraph-1', 'Hoogstraat - Rotterdam')
+    const paragraph1 = createParagraph('contacts-paragraph-1', 'Hoogstraat - Rotterdam  First-Location')
     paragraph1.classList.add('contact-paragraph-1');
 
     const paragraph2 = createParagraph('contacts-paragraph-2', '30A - 3011PR');

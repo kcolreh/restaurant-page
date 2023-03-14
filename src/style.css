@@ -243,6 +243,7 @@ body {
 .contact-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
 }
 
@@ -250,12 +251,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  border: 5px var(--clr-primary) solid;
-  margin: 0rem 5rem 5rem 5rem;
+  border: 3px var(--clr-primary) solid;
+  margin: 5rem 5rem 5rem 5rem;
   padding: 2rem;
   width: 450px;
   border-radius: 1rem;
   background-color: var(--clr-secondary);
+}
+
+.contact-image {
+  height: 200px;
+  width: 200px;
+}
+
+.contact-image:hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
 }
 
 .contact-paragraph-1 {
@@ -280,4 +291,29 @@ body {
   list-style: none;
   color: var(--clr-neutral-black);
   text-align: center;
+}
+
+/** about-page below **/
+
+.about-container {
+  display: flex;
+  margin: 5rem;
+}
+
+.about-t-p-container {
+  width: 40vw;
+}
+
+.about-title {
+  text-align: center;
+  color: var(--clr-primary);
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.about-paragraph {
+  text-align: center;
+  color: var(--clr-secondary);
+  font-weight: bolder;
+  font-size: 2rem;
 }

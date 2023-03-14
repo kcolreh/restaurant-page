@@ -1,6 +1,7 @@
 import { homePage } from './pages/home.js';
 import { menuPage } from './pages/menu.js';
 import { contactPage } from './pages/contact.js';
+import { aboutPage } from './pages/about.js';
 import { renderPage } from './functions/render-page.js';
 import { firstLoad } from './functions/first-load.js';
 
@@ -22,7 +23,8 @@ const changeAbout = (() => {
     const headerButton = document.getElementById('header-about');
 
     headerButton.addEventListener('click', () => {
-        console.log('about');
+        renderPage();
+        aboutPage();
     })
 })();
 
