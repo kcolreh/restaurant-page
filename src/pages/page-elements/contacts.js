@@ -3,7 +3,7 @@ import { createDiv, createParagraph, createList, createImage } from "./elements"
 export function createContact() {
     const content = document.getElementById('content');
 
-    const image = createImage('contact-image', '../src/utilities/img/title-cat.png')
+    const image = createImage('contact-image', './img/title-cat.png')
     image.classList.add('contact-image');
 
     const contactContainer = createDiv('contact-container');

@@ -9,7 +9,7 @@ export function createAboutSection() {
     const titleParagraphContainer = createDiv('about-t-p-container');
     titleParagraphContainer.classList.add('about-t-p-container');
 
-    const aboutImage = createImage('about-image', './img/home.png');
+    const aboutImage = createImage('about-image', 'img/home.png');
     aboutImage.classList.add('about-image');
 
     const aboutTitle = createTitle(1, 'about-title', 'Serving every day since 2022');
