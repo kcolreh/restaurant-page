@@ -25,15 +25,15 @@ const cardFactory = (image, title, paragraph) => {
 export function createSection() {
     const content = document.getElementById('content');
     const section = document.createElement('section');
-    const cake = cardFactory('../src/utilities/img/cake1.jpg', `Kiki's cake`, 'Chocolate cake flavored with melted chocolate.');
-    const cake1 = cardFactory('../src/utilities/img/cake5.jpg', `Kiki's cupcake`, 'Small and tasty snack cakes of various flavors.');
-    const cake2 = cardFactory('../src/utilities/img/cake6.jpg', `Kiki's pie`, 'A tasty dessert consisting of two chocolate layers.');
-    const cake3 = cardFactory('../src/utilities/img/cake2.jpg', 'Gibbery cake', 'Cream covered strawberry short cake.');
-    const cake4 = cardFactory('../src/utilities/img/cake3.jpg', `Gigu's famous pie`, 'Light pastry fruit cake filled with various jams.');
-    const cake5 = cardFactory('../src/utilities/img/cake4.jpg', `Gigu's ice-cream`, 'Sprinkle cone filled with ice-cream.');
-    const cake6 = cardFactory('../src/utilities/img/cake7.jpg', `Kiku's delight`, 'A special birthday cake filled with suprise flavors.');
-    const cake7 = cardFactory('../src/utilities/img/cake8.jpg', `Brother Cake`, 'Traditional cake topped with macarons.');
-    const cake8 = cardFactory('../src/utilities/img/cake9.jpg', 'Pink delight', 'A pink theme birthday ice-cream cake.');
+    const cake = cardFactory('./img/cake1.jpg', `Kiki's cake`, 'Chocolate cake flavored with melted chocolate.');
+    const cake1 = cardFactory('./img/cake5.jpg', `Kiki's cupcake`, 'Small and tasty snack cakes of various flavors.');
+    const cake2 = cardFactory('./img/cake6.jpg', `Kiki's pie`, 'A tasty dessert consisting of two chocolate layers.');
+    const cake3 = cardFactory('./img/cake2.jpg', 'Gibbery cake', 'Cream covered strawberry short cake.');
+    const cake4 = cardFactory('./img/cake3.jpg', `Gigu's famous pie`, 'Light pastry fruit cake filled with various jams.');
+    const cake5 = cardFactory('./img/cake4.jpg', `Gigu's ice-cream`, 'Sprinkle cone filled with ice-cream.');
+    const cake6 = cardFactory('./img/cake7.jpg', `Kiku's delight`, 'A special birthday cake filled with suprise flavors.');
+    const cake7 = cardFactory('./img/cake8.jpg', `Brother Cake`, 'Traditional cake topped with macarons.');
+    const cake8 = cardFactory('./img/cake9.jpg', 'Pink delight', 'A pink theme birthday ice-cream cake.');
 
     content.appendChild(section);
     section.appendChild(cake);

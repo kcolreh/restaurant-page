@@ -18,7 +18,7 @@ export function createHome() {
     const paragraph2 = createParagraph('home-para-2', 'We love, we live, we cake.')
     paragraph2.classList.add('home-paragraph-2');
 
-    const homeImage = createImage('home-image', '../src/utilities/img/home.png');
+    const homeImage = createImage('home-image', './img/home.png');
     homeImage.classList.add('home-image');
 
     content.appendChild(homeContainer);

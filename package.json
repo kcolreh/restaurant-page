@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/kcolreh/restaurant-page/issues"
   },
-  "homepage": "https://github.com/kcolreh/restaurant-page#readme",
+  "homepage": "https://github.com/kcolreh/restaurant-page",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "eslint": "^8.35.0",
